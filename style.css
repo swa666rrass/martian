@@ -1,0 +1,62 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Copperplate;
+}
+nav > h1 {
+    font-size: 50px;
+}
+h1:hover {
+    color: lawngreen;
+}
+
+ul, li, h1 {
+    display: inline;
+    padding: 100px;
+
+    a {
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+    }
+}
+a:hover {
+    text-decoration: underline;
+    color: lawngreen;
+}
+#main {
+    text-align: center;
+    padding: 100px;
+    h1 {
+        font-size: 50px;
+    }
+}
+
+
+/*
+Martian hover
+ */
+
+.martians_hover {
+    position: relative;
+    display: inline-block;
+}
+.martian {
+    display: block;
+    transition: opacity 0.9s ease;
+}
+.martian_white {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: ease-out 1s;
+}
+.martians_hover:hover .martian {
+    opacity: 0;
+}
+
+.martians_hover:hover .martian_white {
+    opacity: 1;
+}
+
