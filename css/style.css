@@ -10,7 +10,6 @@ body {
     background-repeat: no-repeat;
     margin: 0;
     height: 100%;
-
 }
 
 h1 {
@@ -95,4 +94,3 @@ Martian img hover
 .martians_hover:hover .martian_white {
     opacity: 1;
 }
-

@@ -4,21 +4,16 @@ body {
     font-family: Copperplate;
     user-select: none;
     -webkit-user-select: none;
-    background-image: url("../pics/web-pic.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 0;
-    height: 100%;
 }
 
-h1 {
+nav > h1 {
     font-size: 50px;
+    padding-right: 50px;
 }
 
 ul, li, h1 {
     display: inline;
-    padding: 80px;
+    padding: 95px;
 
     a {
         text-decoration: none;
@@ -27,6 +22,14 @@ ul, li, h1 {
     }
 }
 
+h2 {
+    text-align: center;
+    font-size: 165%;
+}
+
+.ig {
+    margin-right: 200px;
+}
 /*
 pseudo classes and pseudo elements
  */
@@ -40,4 +43,71 @@ a:hover {
     text-decoration: underline;
     color: lawngreen;
     transition: ease-out 0.5s;
+}
+
+/*
+IG img hover
+ */
+
+#main {
+    text-align: center; /* Zarovná obsah na střed */
+    height: 100%; /* Zabere celou výšku viewportu */
+    margin: 0; /* Odstraní okraje */
+    display: flex;
+    justify-content: center;
+}
+
+.ig {
+    position: relative;
+    display: inline-block;
+}
+
+.ig_grey {
+    display: block;
+    transition: opacity 0.9s ease;
+}
+
+.ig_green {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: ease-out 1s;
+}
+
+.ig:hover .ig_grey {
+    opacity: 0;
+}
+
+.ig:hover .ig_green {
+    opacity: 1;
+}
+
+/*
+ MAIL img hover
+ */
+.mail {
+    position: relative;
+    display: inline-block;
+}
+
+.mail_grey {
+    display: block;
+    transition: opacity 0.9s ease;
+}
+
+.mail_green {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: ease-out 1s;
+}
+
+.mail:hover .mail_grey {
+    opacity: 0;
+}
+
+.mail:hover .mail_green {
+    opacity: 1;
 }
