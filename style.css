@@ -3,11 +3,9 @@ body {
     color: white;
     font-family: Copperplate;
 }
-nav > h1 {
+
+h1 {
     font-size: 50px;
-}
-h1:hover {
-    color: lawngreen;
 }
 
 ul, li, h1 {
@@ -20,31 +18,50 @@ ul, li, h1 {
         color: white;
     }
 }
-a:hover {
-    text-decoration: underline;
-    color: lawngreen;
-}
+
 #main {
     text-align: center;
     padding: 100px;
+
     h1 {
         font-size: 50px;
     }
 }
 
+/*
+hover
+ */
+
+h1:hover {
+    color: lawngreen;
+    transition: ease-out 0.5s;
+}
+
+h2:hover {
+    color: green;
+    transition: ease-out 0.5s;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: lawngreen;
+    transition: ease-out 0.5s;
+}
 
 /*
-Martian hover
+Martian img hover
  */
 
 .martians_hover {
     position: relative;
     display: inline-block;
 }
+
 .martian {
     display: block;
     transition: opacity 0.9s ease;
 }
+
 .martian_white {
     position: absolute;
     top: 0;
@@ -52,6 +69,7 @@ Martian hover
     opacity: 0;
     transition: ease-out 1s;
 }
+
 .martians_hover:hover .martian {
     opacity: 0;
 }
