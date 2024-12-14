@@ -2,6 +2,9 @@ body {
     background-color: black;
     color: white;
     font-family: Copperplate;
+    user-select: none;
+    -webkit-user-select: none;
+
 }
 
 h1 {
@@ -10,7 +13,7 @@ h1 {
 
 ul, li, h1 {
     display: inline;
-    padding: 100px;
+    padding: 80px;
 
     a {
         text-decoration: none;
@@ -28,11 +31,20 @@ ul, li, h1 {
     }
 }
 
+#me {
+    padding-top: 60px;
+}
+
 /*
-hover
+pseudo classes and pseudo elements
  */
 
-h1:hover {
+nav > h1:hover {
+    color: green;
+    transition: ease-out 0.5s;
+}
+
+#me > h1:hover {
     color: lawngreen;
     transition: ease-out 0.5s;
 }
