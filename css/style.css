@@ -4,12 +4,14 @@ body {
     font-family: Copperplate;
     user-select: none;
     -webkit-user-select: none;
-    background-image: url("../pics/web-pic.png");
+    background-image: url("../pics/home_pics/dark-forest-meta.jpg");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     margin: 0;
     height: 100%;
+}
+nav > ul > li > a {
+    margin: 6px;
 }
 
 h1 {
@@ -38,6 +40,7 @@ ul, li, h1 {
 
 #me {
     padding-top: 60px;
+
 }
 
 /*

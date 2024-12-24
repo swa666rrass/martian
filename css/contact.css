@@ -4,6 +4,9 @@ body {
     font-family: Copperplate;
     user-select: none;
     -webkit-user-select: none;
+    background-image: url("../pics/home_pics/dark-forest-meta.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 nav > h1 {
@@ -27,8 +30,10 @@ h2 {
     font-size: 165%;
 }
 
-.ig {
-    margin-right: 200px;
+
+#catch > a {
+    font-weight: bold;
+    color: white;
 }
 /*
 pseudo classes and pseudo elements
@@ -50,9 +55,9 @@ IG img hover
  */
 
 #main {
-    text-align: center; /* Zarovná obsah na střed */
-    height: 100%; /* Zabere celou výšku viewportu */
-    margin: 0; /* Odstraní okraje */
+    text-align: center;
+    height: 100%;
+    margin: 0;
     display: flex;
     justify-content: center;
 }
@@ -60,6 +65,7 @@ IG img hover
 .ig {
     position: relative;
     display: inline-block;
+    margin-right: 200px;
 }
 
 .ig_grey {
