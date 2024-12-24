@@ -10,6 +10,19 @@ body {
     margin: 0;
     height: 100%;
 }
+
+/*
+logo position
+ */
+.logo_div {
+    position: relative;
+}
+.logo_img {
+    position: absolute;
+    left: 12px;
+    top: -6px;
+}
+
 nav > ul > li > a {
     margin: 6px;
 }
@@ -80,6 +93,7 @@ Martian img hover
 .martian {
     display: block;
     transition: opacity 0.9s ease;
+
 }
 
 .martian_white {
@@ -97,3 +111,35 @@ Martian img hover
 .martians_hover:hover .martian_white {
     opacity: 1;
 }
+/*
+scary_eyes img hover
+ */
+
+.scary_eyes_hover {
+    position: relative;
+    display: inline-block;
+}
+
+.scary_eyes {
+    transition: opacity 0.9s ease;
+    position: absolute;
+    bottom: 460px;
+    right: 510px;
+}
+
+.scary_eyes_green {
+    position: absolute;
+    opacity: 0;
+    bottom: 450px;
+    right: 500px;
+    transition: ease-out 1s;
+}
+
+.scary_eyes_hover:hover .scary_eyes {
+    opacity: 0;
+}
+
+.scary_eyes_hover:hover .scary_eyes_green {
+    opacity: 1;
+}
+
