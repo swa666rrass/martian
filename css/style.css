@@ -17,6 +17,7 @@ logo position
 .logo_div {
     position: relative;
 }
+
 .logo_img {
     position: absolute;
     left: 12px;
@@ -111,6 +112,7 @@ Martian img hover
 .martians_hover:hover .martian_white {
     opacity: 1;
 }
+
 /*
 scary_eyes img hover
  */

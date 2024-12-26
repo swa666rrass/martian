@@ -1,0 +1,42 @@
+@keyframes randomMove {
+    0% {
+        transform: translate(100vw, 100vh);
+    }
+    10% {
+        transform: translate(10vw, 5vh);
+    }
+    20% {
+        transform: translate(20vw, 20vh);
+    }
+    30% {
+        transform: translate(30vw, 30vh);
+    }
+    40% {
+        transform: translate(50vw, 15vh);
+    }
+    50% {
+        transform: translate(60vw, 25vh);
+    }
+    60% {
+        transform: translate(70vw, 40vh);
+    }
+    70% {
+        transform: translate(80vw, 10vh);
+    }
+    80% {
+        transform: translate(90vw, 20vh);
+    }
+    90% {
+        transform: translate(100vw, 5vh);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.dark_ball_2 {
+    animation: randomMove 80s linear infinite;
+    position: absolute;
+    top: 90px;
+    left: 1000px;
+}

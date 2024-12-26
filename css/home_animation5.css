@@ -1,0 +1,42 @@
+@keyframes randomMove {
+    0% {
+        transform: translate(0, 0);
+    }
+    10% {
+        transform: translate(12vw, 8vh);
+    }
+    20% {
+        transform: translate(22vw, 12vh);
+    }
+    30% {
+        transform: translate(32vw, 18vh);
+    }
+    40% {
+        transform: translate(42vw, 22vh);
+    }
+    50% {
+        transform: translate(52vw, 30vh);
+    }
+    60% {
+        transform: translate(62vw, 35vh);
+    }
+    70% {
+        transform: translate(72vw, 28vh);
+    }
+    80% {
+        transform: translate(82vw, 40vh);
+    }
+    90% {
+        transform: translate(92vw, 10vh);
+    }
+    100% {
+        transform: translate(102vw, 0);
+    }
+}
+
+.dark_ball_5 {
+    position: absolute;
+    animation: randomMove 120s linear infinite;
+    top: 150px;
+    left: 500px;
+}
